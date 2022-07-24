@@ -50,14 +50,23 @@ exports.student = {
 
   add: async (req, res) => {
     try {
-      const data = { ...req.body };
-      const dataArray1 = await Student.create(data);
+      const dataArray1 = await Student.create({
+        firstName: req.body.firstName,
+        lastName : req.body.lastName,
+        hobbies : req.body.hobbies,
+        gender : req.body.gender,
+        city : req.body.city,
+        age : req.body.age,
+        createdAt : req.body.createdAt,
+        updatedAt : req.body.updatedAt,
+        __v : req.body.__v,
+        });
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
-      return res.json({
-        isSuccess: true,
-        statusCode: 200,
-        data: data
-      });
+        return res.json({
+          isSuccess: true,
+          statusCode: 200,
+          message: "data created"
+      })
     } catch (error) {
       return res.json({
         isSuccess : false,
