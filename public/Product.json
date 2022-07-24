@@ -1,0 +1,23 @@
+[ {
+    "category": "xidoceryp",
+    "productName": "Edward Molina",
+    "price": 874,
+    "clothSize": "Nisi illo proident ",
+    "inStock": "Dolor sint nisi des",
+    "_id": "62ca87ad3ea6261a6c61551d",
+    "createdAt": "2022-07-10T08:02:53.898Z",
+    "updatedAt": "2022-07-10T15:37:51.157Z",
+    "__v": 0,
+    "description": "Lorem officia animi"
+  },
+  {
+    "category": "",
+    "productName": "",
+    "price": 0,
+    "clothSize": "",
+    "inStock": "",
+    "_id": "62ca88153ea6261a6c615522",
+    "createdAt": "2022-07-10T08:04:37.567Z",
+    "updatedAt": "2022-07-10T08:04:37.567Z",
+    "__v": 0
+  }]

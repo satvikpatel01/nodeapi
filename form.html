@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="margin: 0; padding: 0 !important;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" valign="top" style="padding: 25px 25px 10px 25px; background-color:#DADADA;">
+                    <table bgcolor="#45818e" border="0" cellpadding="0" cellspacing="0" width="600">
+                        <tbody>
+                            <tr>
+                                <td align="center"
+                                    style="color: #ffffff; font-family: 'Arial'; font-size: 70px; line-height: 1.2; padding: 25px 15px 25px;">
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/g3HmWfV/logo.png" alt="logo.jpg"
+                                            style="display: block; max-width: 100%; max-height: 100%; width: auto; height: auto;">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 20px;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center"
+                                                    style="color: #555555; font-family: 'Arial'; font-size: 24px; line-height: 1.2; padding: 20px 15px 15px;">
+                                                    {{ORDER_TITLE}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left"
+                                                    style="color: #555555; font-family: 'Arial'; font-size: 13px; line-height: 1.2; padding: 0 15px 20px;">
+                                                    {{ORDER_TEXT}}
+                                                    {{ORDER_EXTRA_INFOS}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left"
+                                                    style="color: #555555; font-family: 'Arial'; font-size: 13px; line-height: 1.2; padding: 0 15px 20px;">
+                                                    {{ORDER_SUB_TITLE_TEXT}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="340">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" valign="center"
+                                                                    style="padding: 30px;">
+                                                                    <a href="{{ORDER_DETAIL_LINK}}" target="_blank"
+                                                                        style="display: table-cell; vertical-align: middle; background: #226069; border-radius:5px; color: #fff;font-family: 'Arial';font-size: 16px;line-height: 1.2;text-decoration: none;font-weight: 500; width: 190px; height: 36px;">View
+                                                                        Order Details</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center"
+                                                    style="color: #555555; font-family: 'Arial'; font-size: 20px; line-height: 1.2; padding-bottom:10px;">
+                                                    Order Summary
+                                                </td>
+                                            </tr>
+                                            <!-- Quote -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#ffffff">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-bottom:1px solid #E9E9E9; border-top:1px solid #E9E9E9;">
+                                                                <th align="left" valign="center"
+                                                                    style="padding:10px 0 10px 20px; font-family: 'Arial'; font-size: 16px;font-weight:600;">
+                                                                    {{QUOTE_NUMBER}}
+                                                                </th>
+                                                                <td align="right" valign="center"
+                                                                    style="padding:10px 20px 10px 0; font-family: 'Arial'; font-size: 12px; color:#333333; font-weight:400;">
+                                                                    {{QUOTE_DATE}}
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 20px;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#ffffff">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-top:15px; width:50%;">
+                                                                    Project:{{PROJECT_NAME}}
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-top:15px; width:50%;">
+                                                                    Manufacturer:{{MANUFACTURER_NAME}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-top:5px; width:50%;">
+                                                                    P.O.# : {{PO_NUMBER}}
+                                                                </td>
+                                                                <td align="left" valign="center" style="font-family: 'Arial'; font-size: 14px;
+																color:#222222; padding-top:5px; width:50%;">
+                                                                    Customer Service: {{CUSTOMER_SERVICE}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-top:5px; width:50%;">
+                                                                    Sidemark : {{PROJECT_SIDEMARK}}
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px;  color:#222222; padding-top:5px; width:50%;">
+                                                                    Contact Name: {{CONTACT_NAME}}
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 20px;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+
+                                            <!-- SOLD to -->
+                                            <tr>
+                                                <td bgcolor="#ffffff">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:700; padding-top:30px; padding-bottom:8px; width:50%;">
+                                                                    SOLD TO
+                                                                </th>
+                                                                <th align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:700;padding-top:30px; padding-bottom:8px; width:50%;">
+                                                                    SHIP TO
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SOLD_TO_NAME}}
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SHIP_TO_NAME}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SOLD_TO_ADDRESS}}
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SHIP_TO_ADDRESS}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SOLD_TO_USER_NAME}} -
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SHIP_TO_USER_NAME}} -
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SOLD_TO_EMAIL}}
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222; padding-bottom:5px; width:50%;">
+                                                                    {{SHIP_TO_EMAIL}}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; color:#222222;width:50%;">
+                                                                    <strong>Resale# :</strong> {{RESALE_ID}}<img
+                                                                        src="https://i.ibb.co/kKvZ49T/pdf.png" alt="pdf"
+                                                                        border="0"
+                                                                        style="vertical-align:middle; margin-left:15px;">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 20px;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <!-- items -->
+                                            <tr>
+                                                <td bgcolor="#ffffff">
+
+                                                    {{OPTIONS_ROW}}
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr style="border-bottom:1px solid #E9E9E9; ">
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 13px;padding-bottom:15px; padding-top:30px;">
+                                                                    Item
+                                                                </td>
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 13px;padding-bottom:15px; padding-top:30px;">
+                                                                </td>
+                                                                <td align="center" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 13px;padding-bottom:15px; padding-top:30px; width:15%;">
+                                                                    Base Price
+                                                                </td>
+                                                                <td align="center" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 13px; padding:30px 30px 15px 30px;">
+                                                                    Qty
+                                                                </td>
+                                                                <td align="right" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 13px;padding-bottom:15px; padding-top:30px;">
+                                                                    Subtotal
+                                                                </td>
+                                                            </tr>
+                                                            <tr style="border-bottom:1px solid #E9E9E9;">
+                                                                <td align="left" valign="top"
+                                                                    rowspan="{{ROW_SPAN_COUNTER}}"
+                                                                    style="padding:15px 20px 0 0;border-bottom:1px solid white;font-family: 'Arial'; font-size: 13px; color:#666666; font-weight:400;">
+                                                                    <img src="{{IMAGE_LINK}}" height="100"
+                                                                        alt="background-img-2" border="0"><br>
+                                                                    By, {{MANUFACTURER_NAME}}
+                                                                </td>
+                                                                <td align="left" valign="top"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:400; padding: 15px 0px 15px; color:#666666;">
+                                                                    {{OPTION_NAME}}
+                                                                </td>
+                                                                <td align="center" valign="top"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:400; padding: 15px 0px 15px; color:#333333;">
+                                                                    {{OPTION_BASE_PRICE}}
+                                                                </td>
+                                                                <td align="center" valign="top"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:400; padding: 15px 0px 15px; color:#333333;">
+                                                                    {{OPTION_BASE_QUANTITY}}
+                                                                </td>
+                                                                <td align="right" valign="top"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:400; padding: 15px 0px 15px; color:#333333;">
+                                                                    {{OPTION_SUBTOTAL}}
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 20px;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <!-- subtotle -->
+                                            <tr>
+                                                <td bgcolor="#ffffff">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr style="border:1px 0 1px 0 solid #000; ">
+                                                                <td align="left" valign="top" rowspan="5"
+                                                                    style="padding-top:40px;">
+
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        style="border:1px solid #E9E9E9;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th align="left" valign="top"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:600; padding:15px 15px 0 15px;">
+                                                                                    Reserved until 02/10/2021
+                                                                                </th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="left" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 15px; font-weight:400;padding:10px 15px 15px 15px;">
+                                                                                    <img src="https://i.ibb.co/zZ964d9/checkbox.png"
+                                                                                        style="vertical-align:middle;margin-right:10px;"
+                                                                                        alt="checkbox" border="0">CFA
+                                                                                    Requested *
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td align="right" valign="top" rowspan="5"
+                                                                    style="padding-top:30px;">
+
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        style="width:100%;">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; width:43.33%;">
+                                                                                    Subtotal</td>
+                                                                                <td align="center" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px;width:13.33%;">
+                                                                                    :</td>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px;width:10%;">
+                                                                                    {{ORDER_SUB_TOTAL_PRICE}}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:43.33%;">
+                                                                                    Shipping</td>
+                                                                                <td align="center" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:13.33%;">
+                                                                                    :</td>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:10%;">
+                                                                                    {{ORDER_SHIPPING_PRICE}}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:43.33%;">
+                                                                                    Minimum Deposit</td>
+                                                                                <td align="center" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:13.33%;">
+                                                                                    :</td>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:10%;">
+                                                                                    {{ORDER_MINIMUM_DEPOSIT}}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:43.33%;">
+                                                                                    Total Price</td>
+                                                                                <td align="center" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:13.33%;">
+                                                                                    :</td>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; padding-top:5px; width:10%;">
+                                                                                    {{ORDER_TOTAL_PRICE}}</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:600; padding-top:5px; width:43.33%;">
+                                                                                    Total Paid</td>
+                                                                                <td align="center" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:600; padding-top:5px; width:13.33%;">
+                                                                                    :</td>
+                                                                                <td align="right" valign="center"
+                                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:600; padding-top:5px; width:10%;">
+                                                                                    {{ORDER_TOTAL_PAID}}</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px 20px;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+
+                                            <!-- terms -->
+                                            <tr>
+                                                <td style="padding-top:40px; padding-bottom:15px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                        style="border:1px solid #E9E9E9; ">
+                                                        <tbody>
+                                                            <tr style="border:1px 0 1px 0 solid #000; ">
+                                                                <td align="left" valign="top" rowspan="5"
+                                                                    style="padding:10px; font-family: 'Arial'; font-size: 12px; line-height:19px; font-weight:400;">
+                                                                    <strong
+                                                                        style="font-family: 'Arial'; font-size: 14px; font-weight:700; padding-bottom:10px; display:block;">TERMS</strong>
+                                                                    Payment Required: {{ORDER_PAYMENT_TERMS}},
+                                                                    Lead-Time: {{ORDER_LEAD_TIME}}, FOB: {{ORDER_FOB}},
+                                                                    Ship Via: {{ORDER_SHIP_VIA}}, Quote valid for 30
+                                                                    days.<br>
+                                                                    Holds and availability are not confirmed until
+                                                                    approved by Mfr. / Brand. <strong>Please note that
+                                                                        the quoted lead time starts from receipt of
+                                                                        deposit, PO, all signed order documents and all
+                                                                        information being final.</strong> Quoted lead
+                                                                    time is for production only and does not account for
+                                                                    transit time for shipping and holiday closure.
+                                                                    Orders are non-cancellable upon receipt of deposit.
+                                                                    Deposits are non refundable.
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- payment details -->
+                                            <tr style="display: none;">
+                                                <td style="padding:15px; background-color:#F7F7F7;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr style="border:1px 0 1px 0 solid #000;">
+                                                                <td align="left" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px; font-weight:700;">
+                                                                    PAYMENT DETAILS</td>
+                                                                <td align="right" valign="center"
+                                                                    style="font-family: 'Arial'; font-size: 14px;">
+                                                                    payment method : <strong>Visa
+                                                                        ****************123</strong></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="center">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="340">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" valign="center"
+                                                                    style="padding: 30px;">
+                                                                    <a href="{{ORDER_DETAIL_LINK}}" target="_blank"
+                                                                        style="display: table-cell; vertical-align: middle; background: #226069; border-radius:5px; color: #fff;font-family: 'Arial';font-size: 16px;line-height: 1.2;text-decoration: none;font-weight: 500; width: 190px; height: 36px;">View
+                                                                        Order Details</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="center" bgcolor="#F7F7F7">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" valign="center"
+                                                                    style="padding:15px 15px 15px 0px;">
+                                                                    <a href="#" target="_blank"
+                                                                        style="font-size:15px; text-decoration:none; color:#555555;">
+                                                                        Follow us
+                                                                    </a>
+                                                                </td>
+                                                                <td align="center" valign="center"
+                                                                    style="padding:15px 15px 15px 0; font-size:13px; color:#555555;">
+                                                                    <a href="#" target="_blank">
+                                                                        <img src="https://i.ibb.co/mDVtVZZ/facebook.png"
+                                                                            alt="facebook.jpg" width="22" height="22">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="center" valign="center"
+                                                                    style="padding:15px 15px 15px 0;">
+                                                                    <a href="#" target="_blank">
+                                                                        <img src="https://i.ibb.co/SRS14Q6/instagram.png"
+                                                                            alt="instagram.jpg" width="22" height="23">
+                                                                    </a>
+                                                                </td>
+                                                                <td align="center" valign="center"
+                                                                    style="padding:15px 0 15px 0;font-size:13px; color:#555555;">
+                                                                    <a href="#" target="_blank">
+                                                                        <img src="https://i.ibb.co/vVfxZ1N/pintres.png"
+                                                                            alt="pintres.jpg" width="22" height="22">
+                                                                    </a>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0px 0px; background-color:#DADADA;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="600" style="margin:0 auto;">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="center">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="center" style="padding: 20px 15px 15px;">
+                                                    <a href="#">
+                                                        <img src="https://i.ibb.co/YWPBffj/footer-logo.png"
+                                                            alt="footer-logo.jpg"
+                                                            style="display: block; max-width: 100%; max-height: 100%; width: auto; height: auto;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="center" style=" font-size:14px; color:#000;">
+                                                    Bellvine Inc, Oakland, CA.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="center" style=" font-size:14px; color:#000;">
+                                                    © 2021 Bellvine, Inc
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" valign="center" style="padding:5px 10px 0px;">
+                                                    <a href="#" target="_blank"
+                                                        style="font-size:13px; text-decoration:underline; color:#000;">
+                                                        Privacy Policy
+                                                    </a>
+                                                </td>
+                                                <td align="center" valign="center"
+                                                    style="padding-top:5px;font-size:13px; color:#000;">
+                                                    |
+                                                </td>
+                                                <td align="center" valign="center" style="padding:5px 10px 0px;">
+                                                    <a href="#" target="_blank"
+                                                        style="font-size:13px; text-decoration:underline; color:#000;">
+                                                        Terms of Service
+                                                    </a>
+                                                </td>
+                                                <td align="center" valign="center"
+                                                    style="padding-top:5px;font-size:13px; color:#000;">
+                                                    |
+                                                </td>
+                                                <td align="center" valign="center" style="padding:5px 10px 0px;">
+                                                    <a href="#" target="_blank"
+                                                        style="font-size:13px; text-decoration:underline; color:#000;">
+                                                        Contact
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center"
+                                    style="color: #000; font-family: 'Arial'; font-size: 13px; line-height: 1.2; padding:5px 0px 25px;">
+                                    If you are having problems using this website, please email us at
+                                    support@bellvine.com
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

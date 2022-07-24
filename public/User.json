@@ -1,0 +1,50 @@
+[
+    {
+      "firstName": "Laura",
+      "lastName": "Rosario",
+      "hobbies": "Sequi fugiat porro q",
+      "gender": "Aut quidem ex dolore",
+      "city": "Eu at consequat Sun",
+      "_id": "62cba9f90fe2601b54c2b523",
+      "age": 79,
+      "createdAt": "2022-07-11T04:41:29.077Z",
+      "updatedAt": "2022-07-11T04:41:29.077Z",
+      "__v": 0
+    },
+    {
+      "firstName": "Ivy",
+      "lastName": "Whitley",
+      "hobbies": "Deserunt necessitati",
+      "gender": "Ex laboris in facere",
+      "city": "Delectus laboriosam",
+      "_id": "62cbaaf00fe2601b54c2b529",
+      "age": 1,
+      "createdAt": "2022-07-11T04:45:36.235Z",
+      "updatedAt": "2022-07-11T04:45:36.235Z",
+      "__v": 0
+    },
+    {
+      "firstName": "Rowan",
+      "lastName": "Sandoval",
+      "hobbies": "Traveling",
+      "gender": "female",
+      "city": "Dolore veniam non e",
+      "_id": "62ccf9470992f603b47c8d20",
+      "age": 72,
+      "createdAt": "2022-07-12T04:32:07.809Z",
+      "updatedAt": "2022-07-12T04:32:07.809Z",
+      "__v": 0
+    },
+    {
+      "firstName": "Lillian",
+      "lastName": "Stevens",
+      "hobbies": "Cooking,Sport,Reading,Exercise,Travelling",
+      "gender": "Male",
+      "city": "baroda",
+      "_id": "62cd1bd395315c25a434a83b",
+      "age": 23,
+      "createdAt": "2022-07-12T06:59:31.535Z",
+      "updatedAt": "2022-07-12T06:59:31.535Z",
+      "__v": 0
+    }
+  ]

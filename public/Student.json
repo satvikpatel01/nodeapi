@@ -1,0 +1,150 @@
+[
+    {
+        "firstName": "Ghanshyam",
+        "lastName": "Godhani",
+        "hobbies": "false",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "62c27436dc0eba2a003e11c7",
+        "age": 50,
+        "createdAt": "2022-07-04T05:01:42.298Z",
+        "updatedAt": "2022-07-06T14:29:51.697Z",
+        "__v": 0
+    },
+    {
+        "firstName": "bsbw",
+        "lastName": "cghd",
+        "hobbies": "njsn",
+        "gender": "dh",
+        "city": "hddn",
+        "_id": "62c59c2f3f4ba32feca67d41",
+        "age": 4674,
+        "createdAt": "2022-07-06T14:29:03.128Z",
+        "updatedAt": "2022-07-06T14:29:03.128Z",
+        "__v": 0
+    },
+    {
+        "firstName": "Aurelia",
+        "lastName": "Benjamin",
+        "hobbies": "Sint sunt fugiat re",
+        "gender": "Do expedita aut sit",
+        "city": "Et nostrum officia c",
+        "_id": "62c59c3b3f4ba32feca67d44",
+        "age": 77,
+        "createdAt": "2022-07-06T14:29:15.529Z",
+        "updatedAt": "2022-07-06T14:29:15.529Z",
+        "__v": 0
+    },
+    {
+        "firstName": "Haviva",
+        "lastName": "Wade",
+        "hobbies": "Sint ut est nobis ",
+        "gender": "Facere vel et cumque",
+        "city": "Eum enim sed ipsam e",
+        "_id": "62c59c3d3f4ba32feca67d47",
+        "age": 96,
+        "createdAt": "2022-07-06T14:29:17.620Z",
+        "updatedAt": "2022-07-06T14:29:17.620Z",
+        "__v": 0
+    },
+    {
+        "firstName": "ankita",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Female",
+        "city": "Bilimora",
+        "_id": "62cc0bfa0b8a8023bc38c303",
+        "age": 34,
+        "createdAt": "2022-07-11T11:39:38.197Z",
+        "updatedAt": "2022-07-11T11:39:38.197Z",
+        "__v": 0
+    },
+    {
+        "firstName": "tupesh",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "62cc0cac0b8a8023bc38c309",
+        "age": 23,
+        "createdAt": "2022-07-11T11:42:36.283Z",
+        "updatedAt": "2022-07-11T11:42:36.283Z",
+        "__v": 0
+    },
+    {
+        "firstName": "ankita",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Male",
+        "city": "Surat",
+        "_id": "62cc0d3c0b8a8023bc38c30c",
+        "age": 23,
+        "createdAt": "2022-07-11T11:45:00.074Z",
+        "updatedAt": "2022-07-11T11:45:00.074Z",
+        "__v": 0
+    },
+    {
+        "firstName": "mitali",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "62cc0da10b8a8023bc38c30f",
+        "age": 23,
+        "createdAt": "2022-07-11T11:46:41.349Z",
+        "updatedAt": "2022-07-11T11:46:41.349Z",
+        "__v": 0
+    },
+    {
+        "firstName": "tupesh",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Male",
+        "city": "Surat",
+        "_id": "62cc0ddd0b8a8023bc38c313",
+        "age": 23,
+        "createdAt": "2022-07-11T11:47:41.203Z",
+        "updatedAt": "2022-07-11T11:47:41.203Z",
+        "__v": 0
+    },
+    {
+        "firstName": "tupesh",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "62cc17060b8a8023bc38c326",
+        "age": 43,
+        "createdAt": "2022-07-11T12:26:46.690Z",
+        "updatedAt": "2022-07-11T12:26:46.690Z",
+        "__v": 0
+    },
+    {
+        "firstName": "tupeshcsdvdsvsdvsdsvbsv",
+        "lastName": "patel",
+        "hobbies": "true",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "62cc1a6e0b8a8023bc38c32b",
+        "age": 23,
+        "createdAt": "2022-07-11T12:41:18.849Z",
+        "updatedAt": "2022-07-11T12:41:18.849Z",
+        "__v": 0
+    },
+    {
+        "firstName": "vkdsvjnkjsdvnjkjvj",
+        "lastName": "snjsdvnjkjsk",
+        "hobbies": "false",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "1657692783953"
+    },
+    {
+        "firstName": "fghbdfg",
+        "lastName": "Godhani",
+        "hobbies": "false",
+        "gender": "Male",
+        "city": "Bilimora",
+        "_id": "1657694691113"
+    }
+]
