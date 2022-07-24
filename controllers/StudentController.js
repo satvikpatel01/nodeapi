@@ -65,7 +65,7 @@ exports.student = {
         return res.json({
           isSuccess: true,
           statusCode: 200,
-          message: "data created"
+          data: dataArray1
       })
     } catch (error) {
       return res.json({
@@ -81,7 +81,17 @@ exports.student = {
       const data1 = req.body
       const _id = req.body.id
       // const data2 = { ...req.body }
-      const dataArray = await Student.findByIdAndUpdate({_id,data1})
+      const dataArray = await Student.findByIdAndUpdate({
+        _id,
+        firstName: req.body.firstName,
+        lastName : req.body.lastName,
+        hobbies : req.body.hobbies,
+        gender : req.body.gender,
+        city : req.body.city,
+        age : req.body.age,
+        createdAt : req.body.createdAt,
+        updatedAt : req.body.updatedAt,
+        __v : req.body.__v,})
       // const data1 = dataArray.findIndex((x) => x._id === req.body.id)
       // dataArray.splice(data1, 1, { ...req.body })
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
