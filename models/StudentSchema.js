@@ -31,22 +31,9 @@ const StudentSchema = new mongoose.Schema({
         type: Number,
         trim: true,
         default: 0,
-    },
-    createdAt: {
-        type: String,
-        trim: true,
-        default: "",
-    },
-    updatedAt: {
-        type: String,
-        trim: true,
-        default: "",
-    },
-    __v: {
-        type: Number,
-        trim: true,
-        default: 0,
     }
+},{
+    timestamps:true
 });
 
 const student = mongoose.model("student", StudentSchema)

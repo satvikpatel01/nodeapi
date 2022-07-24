@@ -50,17 +50,25 @@ exports.student = {
 
   add: async (req, res) => {
     try {
-      const dataArray1 = await Student.create({
+      // const student = new Student({
+      //   firstName: req.body.firstName,
+      //   lastName : req.body.lastName,
+      //   hobbies : req.body.hobbies,
+      //   gender : req.body.gender,
+      //   city : req.body.city,
+      //   age : req.body.age
+      //   })
+      const student = {
         firstName: req.body.firstName,
         lastName : req.body.lastName,
         hobbies : req.body.hobbies,
         gender : req.body.gender,
         city : req.body.city,
-        age : req.body.age,
-        createdAt : req.body.createdAt,
-        updatedAt : req.body.updatedAt,
-        __v : req.body.__v,
-        });
+        age : req.body.age
+        }
+
+      const dataArray1 = await Student.create(student);
+      // const dataArray1 = await student.save()
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
         return res.json({
           isSuccess: true,
@@ -80,17 +88,15 @@ exports.student = {
       // const dataArray = fs.readFileSync(`${this.student.getDirectory()}/public/Student.json`, "utf-8");
       // const data2 = { ...req.body }
       const _id = req.query.id
-      const dataArray = await Student.findByIdAndUpdate({
-        _id,
+      const student = {
         firstName: req.body.firstName,
         lastName : req.body.lastName,
         hobbies : req.body.hobbies,
         gender : req.body.gender,
         city : req.body.city,
-        age : req.body.age,
-        createdAt : req.body.createdAt,
-        updatedAt : req.body.updatedAt,
-        __v : req.body.__v,})
+        age : req.body.age
+      }
+      const dataArray = await Student.findByIdAndUpdate(_id,student)
       // const data1 = dataArray.findIndex((x) => x._id === req.body.id)
       // dataArray.splice(data1, 1, { ...req.body })
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
