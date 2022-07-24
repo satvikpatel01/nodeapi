@@ -1,21 +1,32 @@
 const fs = require('fs')
+const Student = require("../models/userSchema")
 
 exports.student = {
   getDirectory: () => {
     const splitDir = __dirname.split("\\");
     splitDir.pop();
     return splitDir.join("\\");
-  },
-  get: (req, res) => {
-    const dataArray = fs.readFileSync(
-      `${this.student.getDirectory()}/public/Student.json`,
-      "utf-8"
-    );
+  }, 
+  get: async(req, res) => {
+    try {
+      const students = await Student.find();
     return res.json({
       isSuccess: true,
       statusCode: 200,
-      data: JSON.parse(dataArray),
+      data: students,
     });
+    } catch (error) {
+      return res.json({
+        isSuccess:false,
+        statusCode: 500,
+        mesage: error.message,
+      });
+    }
+    // const dataArray = fs.readFileSync(
+    //   `${this.student.getDirectory()}/public/Student.json`,
+    //   "utf-8"
+    // );
+    
   },
   getbyid: (req, res) => {
     const dataArray = fs.readFileSync(`${this.student.getDirectory()}/public/Student.json`,"utf-8");
