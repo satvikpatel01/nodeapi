@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-require("../models/userSchema");
+require("../models/AccountSchema");
+require("../models/StudentSchema");
 
 mongoose.Promise = global.Promise;
 
