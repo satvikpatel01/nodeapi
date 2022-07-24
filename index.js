@@ -4,6 +4,9 @@ require('./config/db')
 const express = require("express");
 const app = express();
 const fs = require("fs")
+let cors = require('cors')
+const PORT = process.env.PORT || 5000;
+
 // const dataArray = fs.readFileSync(`${__dirname}/Student.json`, "UTF-8");
 const emailForm =fs.readFileSync(`${__dirname}/form.html`, "utf-8")
 const nodemailer = require('nodemailer');
@@ -22,8 +25,7 @@ app.use(
   })
 );
 
-const PORT = process.env.PORT || 5000;
-
+app.use(cors())
 // student start
 app.use('/api', routes)
 // app.get("/api/student/get", (req, res) => {
