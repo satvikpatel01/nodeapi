@@ -78,7 +78,6 @@ exports.student = {
   edit: async (req, res) => {
     try {
       // const dataArray = fs.readFileSync(`${this.student.getDirectory()}/public/Student.json`, "utf-8");
-      const data1 = req.body
       const _id = req.body.id
       // const data2 = { ...req.body }
       const dataArray = await Student.findByIdAndUpdate({
@@ -98,7 +97,7 @@ exports.student = {
       return res.json({
         isSuccess: true,
         statusCode: 200,
-        data: data1
+        data: dataArray
       });
     } catch (error) {
       return res.json({
