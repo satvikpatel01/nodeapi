@@ -50,7 +50,7 @@ exports.student = {
 
   add: async (req, res) => {
     try {
-      const data = { ...req.body, _id: JSON.stringify(new Date().valueOf()) };
+      const data = { ...req.bodys };
       const dataArray1 = await Student.create(data);
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
       return res.json({
