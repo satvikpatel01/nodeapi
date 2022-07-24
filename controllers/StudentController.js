@@ -78,10 +78,8 @@ exports.student = {
   edit: async (req, res) => {
     try {
       // const dataArray = fs.readFileSync(`${this.student.getDirectory()}/public/Student.json`, "utf-8");
-      const _id = req.body.id
       // const data2 = { ...req.body }
       const dataArray = await Student.findByIdAndUpdate({
-        _id,
         firstName: req.body.firstName,
         lastName : req.body.lastName,
         hobbies : req.body.hobbies,
