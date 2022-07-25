@@ -68,6 +68,7 @@ exports.student = {
         }
 
       const dataArray1 = await Student.create(student);
+
       // const dataArray1 = await student.save()
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
         return res.json({
@@ -88,15 +89,15 @@ exports.student = {
       // const dataArray = fs.readFileSync(`${this.student.getDirectory()}/public/Student.json`, "utf-8");
       // const data2 = { ...req.body }
       const _id = req.query.id
-      const student = {
-        firstName: req.body.firstName,
-        lastName : req.body.lastName,
-        hobbies : req.body.hobbies,
-        gender : req.body.gender,
-        city : req.body.city,
-        age : req.body.age
-      }
-      const dataArray = await Student.findByIdAndUpdate(_id,student)
+      // const student = {
+      //   firstName: req.body.firstName,
+      //   lastName : req.body.lastName,
+      //   hobbies : req.body.hobbies,
+      //   gender : req.body.gender,
+      //   city : req.body.city,
+      //   age : req.body.age
+      // }
+      const dataArray = await Student.findByIdAndUpdate(_id,req.body)
       // const data1 = dataArray.findIndex((x) => x._id === req.body.id)
       // dataArray.splice(data1, 1, { ...req.body })
       // fs.writeFileSync(`${this.student.getDirectory()}/public/Student.json`, JSON.stringify(dataArray));
@@ -116,7 +117,7 @@ exports.student = {
   delete: async(req, res) => {
     try {
       const _id = req.query.id
-      const data1 = await Student.findByIdAndDelete({_id})
+      const data1 = await Student.findByIdAndDelete(_id)
       // const dataArray = fs.readFileSync(`${this.student.getDirectory()}/public/Student.json`, "utf-8");
       // const data2 = dataArray.filter((x) => x._id !== req.query.id)
       // const data1 = req.query.id

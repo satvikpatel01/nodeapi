@@ -16,6 +16,6 @@ router.post("/update", (req, res) => {
   return ProductController.Product.add(req, res);
 });
 router.delete("/delete", (req, res) => {
-  return ProductController.Product.add(req, res);
+  return ProductController.Product.delete(req, res);
 });
 module.exports = router;

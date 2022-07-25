@@ -16,6 +16,6 @@ router.post("/update", (req, res) => {
   return UserController.User.add(req, res);
 });
 router.delete("/delete", (req, res) => {
-  return UserController.User.add(req, res);
+  return UserController.User.delete(req, res);
 });
 module.exports = router;

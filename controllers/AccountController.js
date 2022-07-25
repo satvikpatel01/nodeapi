@@ -3,8 +3,15 @@ const mongoose = require("mongoose");
 const USER = mongoose.model("users");
 
 exports.account = {
-  login: (req, res) => {
-    if (req.body.userName == "test" && req.body.password == "123") {
+  cloneDeep: function (data) {
+    return JSON.parse(JSON.stringify(data))
+  },
+  login: async (req, res) => {
+    const isUserExist = await USER.findOne({
+      email: req.body.email,
+      password: req.body.password
+    })
+    if (isUserExist) {
       var token = jwt.sign(req.body, process.env.secret, {
         expiresIn: "24h", // expires in 24 hours
       });
@@ -13,6 +20,21 @@ exports.account = {
         data: {
           token: token,
         },
+      });
+    }
+    const isCreated = await USER.create({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      password: req.body.password,
+    });
+    if (isCreated) {
+      var token = jwt.sign(req.body, process.env.secret, {
+        expiresIn: "24h", // expires in 24 hours
+      });
+      return res.json({
+        isSuccess: true,
+        token: token,
       });
     }
     return res.json({

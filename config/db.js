@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 require("../models/AccountSchema");
 require("../models/StudentSchema");
-
+require("../models/UserSchema");
+require("../models/ProductSchema");
 mongoose.Promise = global.Promise;
 
 mongoose.connect(process.env.connectionString, {
