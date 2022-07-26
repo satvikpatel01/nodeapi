@@ -13,7 +13,7 @@ router.post("/add", (req, res) => {
   return studentController.student.add(req, res);
 });
 router.post("/update", (req, res) => {
-  return studentController.student.add(req, res);
+  return studentController.student.edit(req, res);
 });
 router.delete("/delete", (req, res) => {
   return studentController.student.delete(req, res);

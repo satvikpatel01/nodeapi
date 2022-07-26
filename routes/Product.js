@@ -13,7 +13,7 @@ router.post("/add", (req, res) => {
   return ProductController.Product.add(req, res);
 });
 router.post("/update", (req, res) => {
-  return ProductController.Product.add(req, res);
+  return ProductController.Product.edit(req, res);
 });
 router.delete("/delete", (req, res) => {
   return ProductController.Product.delete(req, res);
